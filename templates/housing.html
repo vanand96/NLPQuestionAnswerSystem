@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<h1>Welcome to question answer system</h1>
+    {% for row in data.itertuples %}
+            <img src="{% static 'house.jpg'%}" alt="{House}" width="200" height="200">
+    {% endfor %}
+ <form action="answer">
+     <p>If you're interested in this house and have questions, please post here</p>
+    <textarea name="question" placeholder="Enter question about the house" cols="100" rows="6"></textarea>
+    <input type="submit">
+</form>
+ {% endblock %}
