@@ -1,0 +1,91 @@
+Question,Answer
+What is the sale type of this property ?,sale type
+What is the sold date of this property ?,sold date
+What is the type of this property ?,property type
+What is the address of this property ?,address
+What is the city of this property ?,city
+What is the state of this property ?,state or province
+What is the province of this property ?,zip or postal code
+What is the zipcode of this property ?,zip or postal code
+What is the postal code of this property ?,zip or postal code
+What is the price of this property ?,price
+What is the value of this property ?,price
+What is the cost of this property ?,price
+How much does this property cost ?,price
+How many bedrooms are in this property ?,beds
+How many baths are in this property ?,baths
+What is the location of this property ?,location
+What is the square feet of this property ?,square feet
+What is the lot size of this property ?,lot size
+Which year is this property built ?,year built
+How many days is this property on the market ?,days on market
+What is the price per square feet of this property ?,$/square feet
+What is the HOA of this property ?,hoa/month
+What is the status of this property ?,status
+What is the next open house start time of this property ?,next open start time
+What is the next open house end time of this property ?,next open end time
+What is the url of this property ?,url
+What is the source of this property ?,source
+What is the mls number of this property ?,mls#
+What is the latitude of this residence ?,latitude
+What is the longitude of this residence ?,longitude
+What is the sale type of this house ?,sale type
+What is the sold date of this house ?,sold date
+What is the type of this house ?,property type
+What is the address of this house ?,address
+What is the city of this house ?,city
+What is the state of this house ?,state or province
+What is the province of this house ?,zip or postal code
+What is the zipcode of this house ?,zip or postal code
+What is the postal code of this house ?,zip or postal code
+What is the price of this house ?,price
+What is the value of this house ?,price
+What is the cost of this house ?,price
+How much does this house cost ?,price
+How many bedrooms are in this house ?,beds
+How many baths are in this house ?,baths
+What is the location of this house ?,location
+What is the square feet of this house ?,square feet
+What is the lot size of this house ?,lot size
+Which year is this house built ?,year built
+How many days is this house on the market ?,days on market
+What is the price per square feet of this house ?,$/square feet
+What is the HOA of this house ?,hoa/month
+What is the status of this house ?,status
+What is the next open house start time of this house ?,next open start time
+What is the next open house end time of this house ?,next open end time
+What is the url of this house ?,url
+What is the source of this house ?,source
+What is the mls number of this house ?,mls#
+What is the latitude of this residence ?,latitude
+What is the longitude of this residence ?,longitude
+What is the sale type of this residence ?,sale type
+What is the sold date of this residence ?,sold date
+What is the type of this residence ?,property type
+What is the address of this residence ?,address
+What is the city of this residence ?,city
+What is the state of this residence ?,state or province
+What is the province of this residence ?,zip or postal code
+What is the zipcode of this residence ?,zip or postal code
+What is the postal code of this residence ?,zip or postal code
+What is the price of this residence ?,price
+What is the value of this residence ?,price
+What is the cost of this residence ?,price
+How much does this residence cost ?,price
+How many bedrooms are in this residence ?,beds
+How many baths are in this residence ?,baths
+What is the location of this residence ?,location
+What is the square feet of this residence ?,square feet
+What is the lot size of this residence ?,lot size
+Which year is this residence built ?,year built
+How many days is this residence on the market ?,days on market
+What is the price per square feet of this residence ?,$/square feet
+What is the HOA of this residence ?,hoa/month
+What is the status of this residence ?,status
+What is the next open house start time of this residence ?,next open start time
+What is the next open house end time of this residence ?,next open end time
+What is the url of this residence ?,url
+What is the source of this residence ?,source
+What is the mls number of this residence ?,mls#
+What is the latitude of this residence ?,latitude
+What is the longitude of this residence ?,longitude
