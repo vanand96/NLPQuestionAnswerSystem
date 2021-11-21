@@ -6,6 +6,7 @@ import numpy as np
 import os
 
 home_info=''
+questions_encoded = False
 # Create your views here.
 
 def home(request):
@@ -13,20 +14,18 @@ def home(request):
     return render(request, 'home.html', {'data':data.head(10)})
 
 def selected_house(request):
-    print('Value from the method******************************')
     addr = request.GET['value']
-    print(addr)
     data = get_housing_info()
     global home_info
     home_info = data[data['address'] == addr]
-    print(home_info)
     return render(request, 'housing.html', {'data': home_info})
        
 
 def answer(request):
     question = request.GET['question']
     data = get_all_questions()
-    encode_questions(data)
+    if questions_encoded == False:
+        encode_questions(data)
     answer, score, predicted_question = get_question_answer(data, question)
     redfin_data = get_housing_info()
     requested_data = redfin_data.loc[2][answer]
@@ -50,6 +49,8 @@ def encode_questions(data):
         np.sum(questions_encoder * questions_encoder, axis=1)
     )
     np.save("questions_len", questions_encoder_len)
+    global questions_encoded
+    questions_encoded = True
 
 def get_question_answer(data, question):
     bert_client = BertClient()
@@ -95,8 +96,12 @@ def fix_data_types(redfin_data):
     redfin_data['hoa/month'] = redfin_data['hoa/month'].map(lambda x: '{0:.2f}'.format(x))
     return redfin_data
 
-
-
-
-
-
+def get_answer(request):
+    question = request.GET['question']
+    data = get_all_questions()
+    if questions_encoded == False:
+        encode_questions(data)
+    answer, score, predicted_question = get_question_answer(data, question)
+    # redfin_data = get_housing_info()
+    requested_data = home_info[answer]
+    return HttpResponse(requested_data)

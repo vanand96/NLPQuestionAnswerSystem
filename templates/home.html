@@ -1,20 +1,9 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-<!--    
 
-<h1>Hello {{name}}</h1>
-<form action="answer">
-    Enter question about house: <input type="text" name="question">
-    <input type="submit">
-    </form>
- -->
-
-<h1>Welcome to question answer system</h1>
+<h1 style="color: rgb(10, 10, 10);" align="center">Welcome to SDSU real estate system</h1>
 <table>
-    <tr>
-      <th>Address</th>
-    </tr>
     {% for row in data.itertuples %}
     <tr>
         <td>
