@@ -1,3 +1,4 @@
+from tokenize import Ignore
 from django.http.response import HttpResponse
 from django.shortcuts import render
 import pandas as pd
@@ -7,11 +8,21 @@ import os
 
 home_info=''
 questions_encoded = False
+current_page=0
 # Create your views here.
 
 def home(request):
+    try:
+        page = request.GET['value']
+        global current_page
+        if page == 'next':
+            current_page = current_page + 11
+        if page == 'previous':
+            current_page = current_page - 11
+    except:
+        pass    
     data = get_housing_info()
-    return render(request, 'home.html', {'data':data.head(10)})
+    return render(request, 'home.html', {'data':data.loc[current_page:current_page+11]})
 
 def selected_house(request):
     addr = request.GET['value']

@@ -1,16 +1,37 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
+<head>
+    <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    .column {
+      float: left;
+      width: 25%;
+      padding: 5px;
+    }
+    
+    /* Clearfix (clear floats) */
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    </style>
+    </head>
 
 <h1 style="color: rgb(10, 10, 10);" align="center">Welcome to SDSU real estate system</h1>
-<table>
+<p>Redfin housing information</p>
+<div class="row">
     {% for row in data.itertuples %}
-    <tr>
-        <td>
-            <img src="{% static 'house.jpg'%}" alt="{House}" width="100" height="100">
-            <a id="{{forloop.counter0}}" name="selected_house" href="{%url 'selected_house' %}?value={{row.address}}">{{row.address}}</a>
-        </td>
-    </tr>
+    <div class="column">
+        <img src="{% static 'house.jpg'%}" alt="{House}" width="100" height="100">
+        <a id="{{forloop.counter0}}" name="selected_house" href="{%url 'selected_house' %}?value={{row.address}}">{{row.address}}</a>
+    </div>
     {% endfor %}
- </table>
+</div>
+<a href="{%url 'home' %}?value=previous" class="previous" name="home">&laquo; Previous</a>
+<a href="{%url 'home' %}?value=next" class="next" name="home">Next &raquo;</a>
 {% endblock %}
