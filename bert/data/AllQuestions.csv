@@ -27,11 +27,8 @@ What is the next open house end time of this property ?,next open end time
 What is the url of this property ?,url
 What is the source of this property ?,source
 What is the mls number of this property ?,mls#
-What is the latitude and longitude of this property ?,"latitude,longitude"
-Is the average price of market greater than this property ?,average price
-Is the average price of market less than this property ?,average price
-Is the average square feet size of market less than this property ?,average square feet
-Is the average square feet size of market greater than this property ?,average square feet
+What is the latitude of this property ?,latitude
+What is the longitude of this property ?,longitude
 What is the sale type of this house ?,sale type
 What is the sold date of this house ?,sold date
 What is the type of this house ?,property type
@@ -60,11 +57,8 @@ What is the next open house end time of this house ?,next open end time
 What is the url of this house ?,url
 What is the source of this house ?,source
 What is the mls number of this house ?,mls#
-What is the latitude and longitude of this house ?,"latitude,longitude"
-Is the average price of market greater than this house ?,average price
-Is the average price of market less than this house ?,average price
-Is the average square feet size of market less than this house ?,average square feet
-Is the average square feet size of market greater than this house ?,average square feet
+What is the latitude of this house ?,latitude
+What is the longitude of this house ?,longitude
 What is the sale type of this residence ?,sale type
 What is the sold date of this residence ?,sold date
 What is the type of this residence ?,property type
@@ -93,8 +87,5 @@ What is the next open house end time of this residence ?,next open end time
 What is the url of this residence ?,url
 What is the source of this residence ?,source
 What is the mls number of this residence ?,mls#
-What is the latitude and longitude of this residence ?,"latitude,longitude"
-Is the average price of market greater than this residence ?,average price
-Is the average price of market less than this residence ?,average price
-Is the average square feet size of market less than this residence ?,average square feet
-Is the average square feet size of market greater than this residence ?,average square feet
+What is the latitude of this residence ?,latitude
+What is the longitude of this residence ?,longitude
