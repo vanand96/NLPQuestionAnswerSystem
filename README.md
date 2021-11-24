@@ -14,7 +14,16 @@ This application will display the real estate housing information. If the user h
     * pip install python-Levenshtein
     * pip install statsmodel
     * pip install sklearn
-    
+
+## Pre-trained BERT model can be downloaded from
+* https://storage.googleapis.com/bert_models/2018_10_18/cased_L-12_H-768_A-12.zip
+* https://storage.googleapis.com/bert_models/2018_10_18/cased_L-24_H-1024_A-16.zip
+* https://storage.googleapis.com/bert_models/2018_10_18/uncased_L-12_H-768_A-12.zip
+* https://storage.googleapis.com/bert_models/2018_10_18/uncased_L-24_H-1024_A-16.zip
+* https://storage.googleapis.com/bert_models/2018_11_23/multi_cased_L-12_H-768_A-12.zip
+* https://storage.googleapis.com/bert_models/2018_11_03/multilingual_L-12_H-768_A-12.zip
+* https://storage.googleapis.com/bert_models/2018_11_03/chinese_L-12_H-768_A-12.zip
+
 ## The following commands needs to be run to start the server, bert model
 * python manage.py runserver
 * python manage.py startapp bert
