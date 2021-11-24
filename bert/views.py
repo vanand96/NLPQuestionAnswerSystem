@@ -5,6 +5,7 @@ import pandas as pd
 from bert_serving.client import BertClient
 import numpy as np
 import os
+import urllib.parse
 
 home_info=''
 questions_encoded = False

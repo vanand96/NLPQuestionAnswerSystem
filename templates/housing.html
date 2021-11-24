@@ -9,14 +9,13 @@
     <title>Chat Bot</title>
 
     <link rel="stylesheet" href="static/css/chat.css">
-    <link rel="stylesheet" href="static/css/home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <h1 style="color: #fff;">Welcome to SDSU real estate system</h1>
+    <h1 align="center">Welcome to SDSU real estate system</h1>
     {% for row in data.itertuples %}
             <img src="{% static 'house.jpg'%}" alt="{House}" width="200" height="200">
-            <h2 style="color: #fff;">{{row.address}}</h2>
+            <h2>{{row.address}}</h2>
     {% endfor %}
     <!-- CHAT BAR BLOCK -->
     <div class="chat-bar-collapsible">

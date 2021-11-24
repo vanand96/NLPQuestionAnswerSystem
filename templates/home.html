@@ -28,7 +28,7 @@
     {% for row in data.itertuples %}
     <div class="column">
         <img src="{% static 'house.jpg'%}" alt="{House}" width="100" height="100">
-        <a id="{{forloop.counter0}}" name="selected_house" href="{%url 'selected_house' %}?value={{row.address}}">{{row.address}}</a>
+        <a id="{{forloop.counter0}}" name="selected_house" href="{%url 'selected_house' %}?value={{row.address|urlencode}}">{{row.address}}</a>
     </div>
     {% endfor %}
 </div>
